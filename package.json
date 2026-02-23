@@ -126,6 +126,6 @@
     "bufferutil": "^4.0.8"
   },
   "packageManager": "pnpm@8.8.0",
-  "engines": { "node": ">=18 <21" },
+  "engines": { "node": ">=18 <21" }
   
 }
