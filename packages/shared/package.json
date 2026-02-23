@@ -1,0 +1,16 @@
+{
+  "name": "@home-asphere/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "main": "./index.ts",
+  "exports": {
+    "./types": "./types.ts",
+    "./constants": "./constants.ts",
+    "./utils": "./utils.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

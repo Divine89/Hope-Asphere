@@ -1,0 +1,30 @@
+{
+  "name": "@home-asphere/db",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "main": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./schema": "./schema.ts",
+    "./migrations": "./migrations"
+  },
+  "scripts": {
+    "db:push": "drizzle-kit push",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate",
+    "db:drop": "drizzle-kit drop"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.39.3",
+    "drizzle-zod": "^0.7.0",
+    "pg": "^8.16.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.27",
+    "drizzle-kit": "^0.31.8",
+    "typescript": "^5.6.3"
+  }
+}
