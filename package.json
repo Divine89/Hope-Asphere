@@ -9,6 +9,7 @@
     "packages/*"
   ],
   "scripts": {
+    "preinstall": "corepack enable && corepack prepare pnpm@8.8.0 --activate",
     "dev": "npm run dev --workspace=apps/web & npm run dev --workspace=apps/api",
     "dev:web": "npm run dev --workspace=apps/web",
     "dev:api": "npm run dev --workspace=apps/api",
@@ -123,5 +124,8 @@
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"
-  }
+  },
+  "packageManager": "pnpm@8.8.0",
+  "engines": { "node": ">=18 <21" },
+  
 }
